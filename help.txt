@@ -1,0 +1,93 @@
+﻿
+Files:
+------
+
+  city_data.js
+  test.js
+  test_cases.js
+  package.json
+
+Pre-Request:
+------------
+
+   NodeJs
+
+   Install Node js
+
+Deployment:
+-----------
+
+npm install
+
+
+To run test case:
+-----------------
+
+npm test
+
+Result:
+-------
+
+> test1@1.0.0 test D:\dev\nodejs\test1
+> mocha test_cases.js
+
+
+  Testing Case - 1
+Loading data before test case starts...
+Loading data
+API call
+Data loaded
+    √ Searching city by name Alabama, Should return Alabama
+       Name         : Alabama
+       Abbr         : AL
+       Capital      : Montgomery
+       Largest City : Birmingham
+       Area         : 135767SKM
+    √ Searching city by abbreaviation AL, Should return Alabama
+       Name         : Alabama
+       Abbr         : AL
+       Capital      : Montgomery
+       Largest City : Birmingham
+       Area         : 135767SKM
+    √ Searching city by abbreaviation al (lower case), Should return Alabama
+       Name         : Alabama
+       Abbr         : AL
+       Capital      : Montgomery
+       Largest City : Birmingham
+       Area         : 135767SKM
+    √ Searching AK, Should return Alaska
+       Name         : Alaska
+       Abbr         : AK
+       Capital      : Juneau
+       Largest City : Anchorage
+       Area         : 1723337SKM
+    √ Searching Mumbai, Should be null
+
+
+  5 passing (774ms)
+
+  
+
+To run test with user input : 
+-----------------------------
+
+> node test
+
+D:\dev\nodejs\test1>node test
+Loading data
+API call
+Data loaded
+Please enter the city name/abbreviation to search (Type exit to quit) : al
+       Name         : Alabama
+       Abbr         : AL
+       Capital      : Montgomery
+       Largest City : Birmingham
+       Area         : 135767SKM
+Please enter the city name/abbreviation to search (Type exit to quit) : ak
+       Name         : Alaska
+       Abbr         : AK
+       Capital      : Juneau
+       Largest City : Anchorage
+       Area         : 1723337SKM
+Please enter the city name/abbreviation to search (Type exit to quit) :
+
