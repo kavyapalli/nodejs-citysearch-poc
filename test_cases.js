@@ -21,17 +21,17 @@ describe('Testing Case - 1', function () {
     });
 
     it('Searching city by abbreaviation AL, Should return Alabama', function () {
-        res = cd.search('Alabama');
+        res = cd.search('AL');
         assert.equal(res.name, 'Alabama');
     });
 
     it('Searching city by abbreaviation al (lower case), Should return Alabama', function () {
-        res = cd.search('Alabama');
+        res = cd.search('al');
         assert.equal(res.name, 'Alabama');
     });
 
     it('Searching AK, Should return Alaska', function () {
-        res = cd.search('Alaska');
+        res = cd.search('AK');
         assert.equal(res.name, 'Alaska');
     });
 
